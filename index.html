@@ -117,12 +117,14 @@
         @media (max-width: 480px) {
             .gallery { grid-template-columns: 1fr; }
         }
-       h1 {
-  font-size: 4rem; /* حجم الخط كبير */
-  text-align: center; /* توسيط النص أفقياً */
-  margin-top: 0; /* إزالة المسافة بالأعلى ليلتصق بحافة الشاشة */
-  width: 100%; /* التأكد من أخذ العرض الكامل */
+        h1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0; /* لإزالة أي مسافات افتراضية قد تزيحه عن الحافة العلويّة */
 }
+
  
     </style>
 </head>
